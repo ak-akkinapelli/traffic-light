@@ -12,6 +12,65 @@
     />
     <title>Traffic light</title>
   </head>
-  <body></body>
+  <body>
+    <section class="traffic_light">
+      <div class="traffic_body">
+        <div
+          id="red"
+          class="light"
+        ></div>
+        <div
+          id="yellow"
+          class="light"
+        ></div>
+        <div
+          id="green"
+          class="light"
+        ></div>
+      </div>
+      <div class="pole"></div>
+    </section>
+    <section class="controls">
+      <section>
+        <label for="'mode">Mode</label>
+        <select
+          class="mode"
+          name="mode"
+          id="mode"
+          onchange="onChange()"
+        >
+          <option value="manual">Manual</option>
+          <option value="auto">Automatic</option>
+        </select>
+      </section>
+      <section
+        class="buttons"
+        id="buttons"
+      >
+        <button
+          id="red_button"
+          class="button"
+        >
+          Red
+        </button>
+        <button
+          id="yellow_button"
+          class="button"
+        >
+          Yellow
+        </button>
+        <button
+          id="green_button"
+          class="button"
+        >
+          Green
+        </button>
+      </section>
+      <section class="text" id="text">
+        <p>The lights change automatically with below duration for each</p>
+        <p>Red: 4 seconds, Yellow: 2 seconds, Green: 5 seconds</p>
+      </section>
+    </section>
+  </body>
   <script src="./index.js"></script>
 </html>
